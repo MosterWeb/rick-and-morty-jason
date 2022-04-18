@@ -1,38 +1,109 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+/* Configuración inicial */
+* {
+  font-family: sans-serif;
+  color: #01b2d9;  
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #05292E;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: "Pangolin", sans-serif;
+  font-size: 3rem;
+ 
+}
+
+h3 {
+  font-family: "Pangolin", sans-serif;
+  font-size: 1.8rem;
+  
+}
+
+input {
+  background: #062226;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  border: 0;
+  font-size: 1rem;
+  padding: 10px;
+  outline: 0;
+  width: 60%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-morty {
+  background-image: url('../public/img/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  width: auto;
+  height: 200px;
+ 
+}
+
+
+.col-md-6 {
+  padding: 5px;
+  width: 100%;
+}
+
+.col-sm-4 {
+  padding: 5px;
+  width: 100%;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/* Para lo responsivo (medias queries) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 579px;
+    
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-sm-4 {
+    width: 33.333%;
+  }
+
+ 
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-4 {
+    width: 33.333%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 992px) {
+  .container {
+    max-width: 976px;
   }
 }

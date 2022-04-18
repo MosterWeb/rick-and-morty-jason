@@ -1,0 +1,12 @@
+
+.paginate button{
+    background: #062226;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.results-location{
+    display: flex;
+    flex-direction: column;   
+    
+}
+
+.results-location button{
+    padding: 10px 0;
+    background: #062226;
+    border: none;
+    cursor: pointer;
+    width: 60%;  
+    margin: auto;
+}
+
+.results-location button:hover{
+    background: #04252b;
+}
